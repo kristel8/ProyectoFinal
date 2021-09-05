@@ -1,0 +1,53 @@
+
+
+header {
+  li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+  }
+
+  ul ul {
+    position: absolute;
+    display: none;
+  }
+
+  ul ul li {
+    display: block;
+    right: 15px;
+    background-color: aliceblue;
+    bottom: -15px;
+  }
+
+  ul li:hover ul {
+    display: block;
+  }
+
+  .logo a img {
+    width: 60px;
+  }
+
+  .presentation {
+    background-color: rgba(255, 159, 227, 0.4);
+    border-radius: 0 0 15% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    column-gap: 20px;
+
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      img {
+        width: 100%;
+      }
+    }
+
+    .presentation-text {
+      animation: 2s texto ease-out;
+      font-size: 1.6rem;
+    }
+  }
+}

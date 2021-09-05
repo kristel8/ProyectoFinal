@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Este es la pagina de mi porfolio donde están los proyectos hechos">
+    <meta name="keywords" content="tRABAJO, PORTFOLIO">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <!-- NAV BAR -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/icons/logo_small.png" alt="Logo"
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-mi.html">Sobre Mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contactos">Contactame</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Mi Portfolio</li>
+        </ol>
+      </nav>
+    </header>
+    
+    <main>
+    <!-- SECCIÓN 01 - PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <h2>Portfolio</h2>
+      <h3>¡Te muestro mis recientes trabajos!</h3>
+      <div class="portfolio__items">
+        <div class="project">
+          <div class="project project1"></div>
+          <div class="project__description">Proyecto #1</div>
+        </div>
+        <div class="project">
+          <div class="project project2"></div>
+          <div class="project__description">Proyecto #2</div>
+        </div>
+        <div class="project">
+          <div class="project project3"></div>
+          <div class="project__description">Proyecto #3</div>
+        </div>
+        <div class="project">
+          <div class="project project1"></div>
+          <div class="project__description">Proyecto #4</div>
+        </div>
+        <div class="project">
+          <div class="project project2"></div>
+          <div class="project__description">Proyecto #5</div>
+        </div>
+        <div class="project">
+          <div class="project project3"></div>
+          <div class="project__description">Proyecto #6</div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN 02 - CLIENTES -->
+    <section class="clients">
+      <h2>Qué dicen <span class="silaba">los clientes</span></h2>
+      <div class="comments">
+        <div class="comment">
+          <img
+            src="assets/images/client.png"
+            alt="Imagen-cliente"
+            class="comment__client comment__client--position"
+          />
+          <p class="comment__description card-pf">
+            Kristel es excelencia. Responsable, resiliente y resolutiva. Contagia curiosidad y ganas de dar siempre un paso hacia delante. Magnífica compañera y profesional. Tuve la oportunidad de trabajar con ella en varios proyectos los cuales fueron entregados cumpliendo el alcance, costo y tiempo planificados.
+          </p>
+        </div>
+        <div class="comment">
+          <img
+            src="assets/images/client.png"
+            alt="Imagen-cliente"
+            class="comment__client comment__client--position"
+          />
+          <p class="comment__description card-pf">
+            Excelente profesional, muy comprometida con el objetivo del proyecto y con un expertise muy alto en tareas de Front End Developer. Gracias a su apoyo el proyecto de renovación de un sistema completo de Intranet fue satisfactorio y entregado a tiempo.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- SECCIÓN 03 - FOOTER -->
+    <footer class="social-media">
+      <h2>Conéctate</h2>
+      <div class="social-list">
+        <a href="#"
+        ><img
+          src="assets/icons/linkedin.svg"
+          alt="Linkedin"
+          class="icons-media"
+      /></a>
+      <a href="#"
+        ><img src="assets/icons/behance.svg" alt="Behance" class="icons-media"
+      /></a>
+      <a href="#"
+        ><img src="assets/icons/github.svg" alt="Github" class="icons-media"
+      /></a>
+      <a href="#"
+        ><img src="assets/icons/youtube.svg" alt="Youtube" class="icons-media"
+      /></a>
+      </div>
+      <p>Copyright © 2021 Kristel Munayco</p>
+
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+@import "../base/mixins";
+
+$secondaryDarkColor: #341dff;
+$primaryColor: #ff71d5;
+
+footer {
+  h2 {
+    color: #fff;
+    font-weight: 700;
+  }
+  color: #fff;
+  background-color: darken($secondaryDarkColor, 40%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  row-gap: 20px;
+  padding: 2%;
+
+  .social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+  }
+
+  .social-list .icons-media {
+    border-radius: 20px;
+  }
+
+  .icons-media {
+    @media (max-width: 900px) {
+        @include icono(darken($primaryColor, 30%), 50px, 50px, 5px);
+      }
+
+    @include icono(darken($primaryColor, 30%), 80px, 80px, 10px);
+
+  }
+}

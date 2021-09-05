@@ -1,0 +1,7 @@
+main {
+  margin: 100px auto;
+  width: 80%;
+  @media (max-width: 900px) {
+  width: 100%;
+  }
+}

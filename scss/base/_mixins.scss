@@ -1,0 +1,23 @@
+@mixin card {
+  background-color: white;
+  box-shadow: rgba(226, 138, 255, 0.6) -5px 7px 13px 1px;
+  padding: 6%;
+  position: relative;
+  font-size: 1.4rem;
+  text-align: justify;
+  border-radius: 20px;
+  height: max-content;
+}
+
+@mixin silaba($color) {
+  color: $color;
+  animation: 4s colores infinite;
+  font-weight: 700;
+}
+
+@mixin icono($color, $width, $height, $padding) {
+  background-color: $color;
+  width: $width;
+  height: $height;
+  padding: $padding;
+}
