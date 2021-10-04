@@ -562,19 +562,37 @@ h2 {
 }
 
 .project1 {
-  background-image: url("../assets/icons/project.jpg");
+  background-image: url("../assets/icons/project-1.png");
   background-size: cover;
   background-position: -150px;
 }
 
 .project2 {
-  background-image: url("../assets/icons/project2.jpg");
+  background-image: url("../assets/icons/project-2.png");
   background-size: cover;
   background-position: -150px;
 }
 
 .project3 {
-  background-image: url("../assets/icons/project3.jpg");
+  background-image: url("../assets/icons/project-3.png");
+  background-size: cover;
+  background-position: -150px;
+}
+
+.project4 {
+  background-image: url("../assets/icons/project-4.png");
+  background-size: cover;
+  background-position: -150px;
+}
+
+.project5 {
+  background-image: url("../assets/icons/project-5.png");
+  background-size: cover;
+  background-position: -150px;
+}
+
+.project6 {
+  background-image: url("../assets/icons/project-6.png");
   background-size: cover;
   background-position: -150px;
 }
