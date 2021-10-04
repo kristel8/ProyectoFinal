@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Este es el sitio web de mi porftolio web, donde encontrarás proyectos, información sobre mi y más">
-    <meta name="keywords" content="PROYECTOS, INTERESES, SERVICIOS, PORTFOLIO">
+    <meta
+      name="description"
+      content="Este es el sitio web de mi porftolio web, donde encontrarás proyectos, información sobre mi y más"
+    />
+    <meta
+      name="keywords"
+      content="PROYECTOS, INTERESES, SERVICIOS, PORTFOLIO"
+    />
     <title>Mi Portfolio Principal</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <!-- NAV BAR -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <div class="logo">
             <a href="index.html"
@@ -30,7 +45,10 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+              <img src="assets/icons/lista.svg" alt="Logo" class="menu"
+            />
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -49,7 +67,7 @@
                 <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contactos">Contactame</a>
+                <a class="nav-link" href="#contactos">Contáctame</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="login.html">Login</a>
@@ -61,16 +79,16 @@
       <!-- SECCIÓN 1 - PRESENTACIÓN -->
       <section class="presentation">
         <img
-          src="assets/images/home.svg"
+          src="/assets/icons/person.svg"
           alt="Imagen de presentación"
-          class="image-2"
+          class="presentation__figure"
           loading="lazy"
         />
-        <div class="presentation-text">
-          <h3 class="silaba">¡Hola!</h3>
+        <div class="presentation__text">
+          <h3 class="titulo">¡Hola!</h3>
           <h1>
             Soy Kristel Munayco <br />
-            <div class="silaba">Frontend Developer &</div>
+            <div class="titulo">Frontend Developer &</div>
             UX/UI Designer
           </h1>
         </div>
@@ -78,7 +96,6 @@
     </header>
 
     <main class="container-main">
-
       <!-- SECCIÓN 2 SOBRE MÍ -->
       <section id="aboutMe">
         <h1>
@@ -87,7 +104,7 @@
         </h1>
         <div class="presentation__description">
           <img
-            src="assets/images/person.svg"
+            src="assets/icons/person-2.svg"
             alt="Imagen de Kristel"
             class="presentation__image"
           />
@@ -98,7 +115,7 @@
               Disfruto mucho diseñar, programar y aprender! Me gusta tomar retos
               para poco a poco comer el mundo! Estoy por cumplir dos años de
               experiencia en Diseño y Desarrollo. Dos mundos que a muchos nos
-              transforman en unicornios! Espero me conozcas más. ¡ÉXITOS!
+              transforman en unicornios!
             </p>
             <form method="get" action="sobre-mi.html">
               <button type="submit" class="btn-pf-primary">VER MÁS</button>
@@ -120,15 +137,16 @@
             />
             <p>
               Diseños web altamente responsivos con completa fidelidad a los
-              prototipos propuestos. ¡También realizo maquetaciones y diseños de páginas dinámicas!
+              prototipos propuestos. ¡También realizo maquetaciones y diseños de
+              páginas dinámicas!
             </p>
             <p>
-              <span class="badge rounded-pill bg-pf-primary ">HTML</span>
-              <span class="badge rounded-pill bg-pf-primary ">CSS</span>
-              <span class="badge rounded-pill bg-pf-primary ">JavaScript</span>
-              <span class="badge rounded-pill bg-pf-primary ">SASS</span>
-              <span class="badge rounded-pill bg-pf-primary ">Bootstrap</span>
-              <span class="badge rounded-pill bg-pf-primary ">Gulp</span>
+              <span class="badge rounded-pill bg-pf-primary">HTML</span>
+              <span class="badge rounded-pill bg-pf-primary">CSS</span>
+              <span class="badge rounded-pill bg-pf-primary">JavaScript</span>
+              <span class="badge rounded-pill bg-pf-primary">SASS</span>
+              <span class="badge rounded-pill bg-pf-primary">Bootstrap</span>
+              <span class="badge rounded-pill bg-pf-primary">Gulp</span>
             </p>
           </div>
         </div>
@@ -140,29 +158,31 @@
               class="image-arrow"
             />
             <p>
-               <b>¡Aumentamos el nivel!</b> <br> Desarrollo de aplicaciones web con el super framework Angular desde el lado Frontend. 
-              No te preocupes, tambien React Native y JavaScript! ♪
+              <b>¡Aumentamos el nivel!</b> <br />
+              Desarrollo de aplicaciones web con el super framework Angular
+              desde el lado Frontend. No te preocupes, tambien React Native y
+              JavaScript! ♪
             </p>
             <p>
-              <span class="badge rounded-pill bg-pf-primary ">Angular</span>
-              <span class="badge rounded-pill bg-pf-primary ">JavaScript</span>
-              <span class="badge rounded-pill bg-pf-primary ">React</span>
-              <span class="badge rounded-pill bg-pf-primary ">RXJS</span>
-              <span class="badge rounded-pill bg-pf-primary ">NGXS</span>
-              <span class="badge rounded-pill bg-pf-primary ">Karma</span>
-              <span class="badge rounded-pill bg-pf-primary ">Jasmine</span>
-              <span class="badge rounded-pill bg-pf-primary ">GraphQL</span>
+              <span class="badge rounded-pill bg-pf-primary">Angular</span>
+              <span class="badge rounded-pill bg-pf-primary">JavaScript</span>
+              <span class="badge rounded-pill bg-pf-primary">React</span>
+              <span class="badge rounded-pill bg-pf-primary">RXJS</span>
+              <span class="badge rounded-pill bg-pf-primary">NGXS</span>
+              <span class="badge rounded-pill bg-pf-primary">Karma</span>
+              <span class="badge rounded-pill bg-pf-primary">Jasmine</span>
+              <span class="badge rounded-pill bg-pf-primary">GraphQL</span>
             </p>
           </div>
           <img
-            src="assets/images/JavaScript frameworks-pana.svg"
+            src="assets/images/services-2.svg"
             alt="Programar"
             class="image"
           />
         </div>
         <div class="service">
           <img
-            src="assets/icons/uxui-design.jpg"
+            src="assets/images/services-3.svg"
             alt="Programar"
             class="image"
           />
@@ -173,18 +193,21 @@
               class="image-arrow"
             />
             <p>
-              <b>¿Tienes una lluvia de ideas?</b> <br>
-              El diseño UX/UI es la mejor parte de iniciar una aplicación móvil o web. Empezamos con una investigación profunda de la experiencia del usuario y continuamos con los wireframes a los más modernos prototipos!
+              <b>¿Tienes una lluvia de ideas?</b> <br />
+              El diseño UX/UI es la mejor parte de iniciar una aplicación móvil
+              o web. Empezamos con una investigación profunda de la experiencia
+              del usuario y continuamos con los wireframes a los más modernos
+              prototipos!
             </p>
             <p>
-              <span class="badge rounded-pill bg-pf-primary ">UX</span>
-              <span class="badge rounded-pill bg-pf-primary ">UI</span>
-              <span class="badge rounded-pill bg-pf-primary ">Lean UX</span>
-              <span class="badge rounded-pill bg-pf-primary ">User Testing</span>
-              <span class="badge rounded-pill bg-pf-primary ">UX Writing</span>
-              <span class="badge rounded-pill bg-pf-primary ">UI Motion</span>
-              <span class="badge rounded-pill bg-pf-primary ">UI Kits</span>
-              <span class="badge rounded-pill bg-pf-primary ">MVP</span>
+              <span class="badge rounded-pill bg-pf-primary">UX</span>
+              <span class="badge rounded-pill bg-pf-primary">UI</span>
+              <span class="badge rounded-pill bg-pf-primary">Lean UX</span>
+              <span class="badge rounded-pill bg-pf-primary">User Testing</span>
+              <span class="badge rounded-pill bg-pf-primary">UX Writing</span>
+              <span class="badge rounded-pill bg-pf-primary">UI Motion</span>
+              <span class="badge rounded-pill bg-pf-primary">UI Kits</span>
+              <span class="badge rounded-pill bg-pf-primary">MVP</span>
             </p>
           </div>
         </div>
@@ -226,8 +249,17 @@
               alt="Imagen-cliente"
               class="comment__client comment__client--position"
             />
+            <img
+              src="assets/images/trazado-2.svg"
+              alt="Imagen-cliente"
+              class="comment__trazado2"
+            />
             <p class="comment__description card-pf">
-              Kristel es excelencia. Responsable, resiliente y resolutiva. Contagia curiosidad y ganas de dar siempre un paso hacia delante. Magnífica compañera y profesional. Tuve la oportunidad de trabajar con ella en varios proyectos los cuales fueron entregados cumpliendo el alcance, costo y tiempo planificados.
+              Kristel es excelencia. Responsable, resiliente y resolutiva.
+              Contagia curiosidad y ganas de dar siempre un paso hacia delante.
+              Magnífica compañera y profesional. Tuve la oportunidad de trabajar
+              con ella en varios proyectos los cuales fueron entregados
+              cumpliendo el alcance, costo y tiempo planificados.
             </p>
           </div>
           <div class="comment">
@@ -236,8 +268,17 @@
               alt="Imagen-cliente"
               class="comment__client comment__client--position"
             />
+            <img
+              src="assets/images/trazado-1.svg"
+              alt="Imagen-cliente"
+              class="comment__trazado"
+            />
             <p class="comment__description card-pf">
-              Excelente profesional, muy comprometida con el objetivo del proyecto y con un expertise muy alto en tareas de Front End Developer. Gracias a su apoyo el proyecto de renovación de un sistema completo de Intranet fue satisfactorio y entregado a tiempo.
+              Excelente profesional, muy comprometida con el objetivo del
+              proyecto y con un expertise muy alto en tareas de Front End
+              Developer. Gracias a su apoyo el proyecto de renovación de un
+              sistema completo de Intranet fue satisfactorio y entregado a
+              tiempo.
             </p>
           </div>
         </div>
@@ -248,13 +289,19 @@
         <h2>¿Porqué <span class="silaba">contratarme?</span></h2>
         <div class="reason">
           <img
-            src="assets/images/skills.svg"
+            src="assets/images/person-3.svg"
             alt="Imagen Habilidad"
             class="image-1"
           />
           <div class="card-pf">
             <p>
-              <b>Una de mis frases favoritas es: Calidad antes de cantidad.</b> Considero que los contratos se basan que lo que eres capaz de hacer o lo que puedes lograr que otros hagan. Mis trabajos son sencillamentes hechos con mucho trabajo y dedicación a lo que me enfoco, en el cliente. Si gustas saber más de mi o acerca de mi experiencia, estaría encantada de brindarte la información necesaria y tener la oportunidad de trabajar juntos. 
+              <b>Una de mis frases favoritas es: Calidad antes de cantidad.</b>
+              Considero que los contratos se basan que lo que eres capaz de
+              hacer o lo que puedes lograr que otros hagan. Mis trabajos son
+              sencillamentes hechos con mucho trabajo y dedicación a lo que me
+              enfoco, en el cliente. Si gustas saber más de mi o acerca de mi
+              experiencia, estaría encantada de brindarte la información
+              necesaria y tener la oportunidad de trabajar juntos.
             </p>
 
             <input type="button" class="btn-pf-primary" value="Contáctame" />
@@ -267,16 +314,24 @@
       <section id="contactos" class="contacts">
         <h2>Contáctame</h2>
         <div class="contact">
-          <img src="assets/images/contact.svg" alt="Contactos" class="image-1" />
+          <img
+            src="assets/images/contact.svg"
+            alt="Contactos"
+            class="image-1"
+          />
           <form class="contact__form">
             <label for="nombre_apellido">Nombre:</label>
-            <input type="text"  class="form-control" placeholder="Nombre" />
+            <input type="text" class="form-control" placeholder="Nombre" />
             <label for="correo">Correo:</label>
             <input type="email" class="form-control" placeholder="Correo" />
             <label for="asunto">Asunto:</label>
             <input type="text" class="form-control" placeholder="Asunto" />
             <label for="descripcion">Descripción</label>
-            <textarea type="text" class="form-control" placeholder="Descripción"></textarea>
+            <textarea
+              type="text"
+              class="form-control"
+              placeholder="Descripción"
+            ></textarea>
             <input type="button" class="btn-pf-primary" value="Enviar" />
           </form>
         </div>
@@ -315,7 +370,6 @@
         /></a>
       </div>
       <p>Copyright © 2021 Kristel Munayco</p>
-
     </footer>
   </body>
 </html>

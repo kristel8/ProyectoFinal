@@ -1,6 +1,6 @@
 @mixin card {
   background-color: white;
-  box-shadow: rgba(226, 138, 255, 0.6) -5px 7px 13px 1px;
+  box-shadow: rgb(212 212 212 / 60%) -2px 5px 13px 2px;
   padding: 6%;
   position: relative;
   font-size: 1.4rem;
@@ -11,7 +11,13 @@
 
 @mixin silaba($color) {
   color: $color;
-  animation: 4s colores infinite;
+  animation: 10s colores infinite;
+  font-weight: 700;
+}
+
+@mixin titulo($color) {
+  color: $color;
+  animation: 10s titulo infinite;
   font-weight: 700;
 }
 

@@ -1,53 +1,93 @@
-
-
 header {
-  li {
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    padding: 15px;
-  }
+  .navbar {
+    background-color: hsl(260, 100%, 61%);
+    .container-fluid {
+      justify-content: space-between;
+    }
+    .nav-link {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      display: table;
+      padding: 0 2rem !important;
+    }
 
-  ul ul {
-    position: absolute;
-    display: none;
-  }
+    .nav-link::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: rgb(255, 255, 255);
+      transform: scale(0, 1);
+      transform-origin: center;
+      transition: transform 0.35s;
+    }
 
-  ul ul li {
-    display: block;
-    right: 15px;
-    background-color: aliceblue;
-    bottom: -15px;
-  }
+    .nav-link:hover::after {
+      color: white;
+      transform: scale(1, 1);
+    }
 
-  ul li:hover ul {
-    display: block;
+    .nav-link:hover {
+      color: white;
+    }
   }
-
   .logo a img {
     width: 60px;
   }
 
+  .menu {
+    width: 30px;
+  }
   .presentation {
-    background-color: rgba(255, 159, 227, 0.4);
-    border-radius: 0 0 15% 15%;
+    background-color: hsl(260, 100%, 61%);
+    border-radius: 0 0 0 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2em;
     column-gap: 20px;
-
-
+    color: white;
     @media (max-width: 900px) {
       flex-wrap: wrap;
-      img {
-        width: 100%;
-      }
     }
 
-    .presentation-text {
-      animation: 2s texto ease-out;
-      font-size: 1.6rem;
+    .presentation__figure {
+      margin: 20px 30px;
     }
   }
+}
+
+.breadcrumb-item {
+  background-color: var(--fontColorLight);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 10px #c4cbd6;
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb {
+  margin: 20px;
+}
+
+.breadcrumb-item.active {
+  background-color: #341dff;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  background-color: #fff;
+  color: #341dff !important;
+  content: var(--bs-breadcrumb-divider, "") !important;
+  font-weight: 800;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
 }
